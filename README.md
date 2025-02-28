@@ -82,6 +82,9 @@ The `FingerprintMatcher` class manages the entire fingerprint matching process t
 - `_extract_features()`: Identifies distinctive characteristics
 - `_match_features()`: Compares fingerprints
 
+![image](https://github.com/user-attachments/assets/54b723ab-1f88-4138-90d4-23c3e0ab58d4)
+
+
 #### 2. Image Processing Pipeline
 
 The preprocessing stage performs several critical operations:
@@ -144,6 +147,9 @@ def _extract_features(self, processed_image, mask):
     
     return coordinates, gradient, mask
 ```
+![image](https://github.com/user-attachments/assets/2292481a-04cd-42f7-8de5-ffee11326dc6)
+
+
 
 #### 5. Matching Algorithm
 
@@ -165,6 +171,8 @@ def _match_features(self, ref_points, samp_points):
     
     return similarity_score
 ```
+
+![image](https://github.com/user-attachments/assets/a5694e1a-7ef5-4315-b48c-4eece25486e0)
 
 ### Usage Instructions
 
